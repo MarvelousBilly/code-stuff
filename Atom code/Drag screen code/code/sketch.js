@@ -9,23 +9,13 @@ var zMin = 0.05;
 var zMax = 9.00;
 var sensativity = 0.05;
 
-// function setup() {
-//   createCanvas(200,200)
-// }
-//
-// function draw() {
-//   background(110)
-//   dragScreen()
-//   rect(0,0,50,50)
-//   //now do code
-// }
-
 function dragScreen(){
   if(!mouseIsPressed){
     oldX = newX
     oldY = newY
     ogX = mouseX
     ogY = mouseY
+
   }
   else{
     newX = oldX + mouseX - ogX
@@ -38,6 +28,5 @@ function dragScreen(){
 function mouseWheel(event) {
   zoom += sensativity * event.delta;
   zoom = constrain(zoom, zMin, zMax);
-  //uncomment to block page scrolling
   return false;
 }
