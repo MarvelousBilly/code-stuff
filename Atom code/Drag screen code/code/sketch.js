@@ -15,7 +15,7 @@ function dragScreen(){
     oldY = newY
     ogX = mouseX
     ogY = mouseY
-
+    ogY = mouseY;
   }
   else{
     newX = oldX + mouseX - ogX
