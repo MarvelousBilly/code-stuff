@@ -12,14 +12,14 @@ var sensativity = 0.05;
 function dragScreen(){
   if(!mouseIsPressed){
     oldX = newX
-    oldY = newY
-    ogX = mouseX
-    ogY = mouseY
+    oldX = newX;
+    oldY = newY;
+    ogX = mouseX;
     ogY = mouseY;
   }
   else{
-    newX = oldX + mouseX - ogX
-    newY = oldY + mouseY - ogY
+    newX = oldX + mouseX - ogX;
+    newY = oldY + mouseY - ogY;
   }
   translate(width/2 + newX, height/2 + newY);
   scale(zoom);
