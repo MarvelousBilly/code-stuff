@@ -11,7 +11,6 @@ var sensativity = 0.05;
 
 function dragScreen(){
   if(!mouseIsPressed){
-    oldX = newX
     oldX = newX;
     oldY = newY;
     ogX = mouseX;

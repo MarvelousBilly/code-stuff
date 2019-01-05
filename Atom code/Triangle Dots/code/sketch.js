@@ -17,7 +17,6 @@ class Dot{
   setNew(){
     cord = [this.x,this.y]
   }
-
 }
 
 let cord, mainAr = []
